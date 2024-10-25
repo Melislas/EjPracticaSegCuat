@@ -1,11 +1,11 @@
 
 import { Vehiculos } from "./Vehiculos";
 
-class AutoDeportivo extends Vehiculos {
+export class AutoDeportivo extends Vehiculos {
 
 
-acelerar():void{
-    this.velocidadActual= this.velocidadActual + 50
+acelerar():number{
+    return this.velocidadActual= this.velocidadActual + 50
 }
 
 public marcaKm():number{

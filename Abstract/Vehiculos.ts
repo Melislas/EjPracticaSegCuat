@@ -2,13 +2,13 @@ export abstract class Vehiculos {
     protected marca:string;
     protected km:number=12345;
     protected tipoDeCombustible:string;
-    protected velocidadActual:number=0
+    protected velocidadActual:number;
 
-constructor(marca:string,km:number,tipoDeCombustible:string,velocidadActual:number){
+constructor(marca:string,km:number,tipoDeCombustible:string){
     this.marca=marca;
     this.km=km;
     this.tipoDeCombustible=tipoDeCombustible;
-    this.velocidadActual=velocidadActual;
+    this.velocidadActual=0
 }
 
 
