@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var libro_1 = require("./libro");
+var gestorlibros_1 = require("./gestorlibros");
+var MartinFierro = new libro_1.Libro("Martin Fierro", "Jose Hernandez", 1970);
+var gestorLibros1 = new gestorlibros_1.Gestorlibros("gestorlibroOlav");
+gestorLibros1.agregarLibro("Martin Fierro", "Jose Hernandez", 1971);
+gestorLibros1.agregarLibro("Martin Fierro", "Jose Hernandez", 1972);
+console.log(gestorLibros1.getlistaLibros());
+// gestorLibros1.eliminarLibro(MartinFierro);
+console.log(gestorLibros1.getlistaLibros().length);
